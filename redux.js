@@ -51,7 +51,7 @@ const accounting = (bagOfMoney = 100, action) => {
   return bagOfMoney;
 };
 
-const plicies = (listOfPolicies = [], action) => {
+const policies = (listOfPolicies = [], action) => {
   if (action.type === 'CREATE-POLICY') {
     return [...listOfPolicies, acton.payload.name];
   } else if (action.type === 'DELECT_POLICY') {
@@ -62,13 +62,13 @@ const plicies = (listOfPolicies = [], action) => {
 
 const { createStore, combineReducers } = Redux;
 
-const outDepartments = combineReducers({
+const ourDepartments = combineReducers({
   accounting: accounting,
   claimsHistory: claimsHistory,
   policies: policies,
 });
 
-const store = createStore(outDeparments);
+const store = createStore(ourDepartments);
 
 const action = createPoliciy('Peeraphtw', 200);
 
