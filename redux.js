@@ -1,5 +1,5 @@
 console.clear();
-
+import Redux from 'redux';
 // Action creator
 
 const createPolicy = (name, amount) => {
