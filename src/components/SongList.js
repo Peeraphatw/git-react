@@ -6,11 +6,12 @@ class SongList extends React.Component {
     this.renderSongList = this.renderSongList.bind(this);
   }
   renderSongList() {
-    return this.props.song.map((item) => {
+    return this.props.song.map(({ title, duration }) => {
       return (
-        <div key={item.duration}>
-          <h3 className='ui header'>{item.title}</h3>
-          <h4 className='ui'>{item.duration}</h4>
+        <div className='item' key={title}>
+          <div className='right floated content'>
+            <button className='ui button primary'>Select</button>
+          </div>
         </div>
       );
     });
