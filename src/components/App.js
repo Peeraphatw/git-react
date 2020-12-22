@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import actions from '../actions';
 import SongList from './SongList';
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-      <SongList />
+    <div ui container grid>
+      <div className='ui row'>
+        <div className='column eight list'>
+          <SongList />
+        </div>
+      </div>
     </div>
   );
 };

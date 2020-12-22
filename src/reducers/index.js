@@ -11,11 +11,11 @@ const songsReducer = () => {
       duration: '4.30',
     },
     {
-      title: 'as long as you care',
+      title: 'As long as you care',
       duration: '3.40',
     },
     {
-      title: 'young',
+      title: 'Young',
       duration: '4.00',
     },
   ];

@@ -12,6 +12,7 @@ class SongList extends React.Component {
           <div className='right floated content'>
             <button className='ui button primary'>Select</button>
           </div>
+          <div className='content'>{title}</div>
         </div>
       );
     });
@@ -19,7 +20,7 @@ class SongList extends React.Component {
   render() {
     console.log(this.props.song);
 
-    return <div>{this.renderSongList()}</div>;
+    return <div className='ui list divided'>{this.renderSongList()}</div>;
   }
 }
 const mapStateToProps = (state) => {
