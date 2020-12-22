@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SongList from './SongList';
 const App = () => {
   return (
-    <div ui container grid>
+    <div className='ui container grid'>
       <div className='ui row'>
         <div className='column eight list'>
           <SongList />
